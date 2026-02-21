@@ -2,9 +2,9 @@ from reward import reward_function0
 from stable_baselines3.common.utils import FloatSchedule
 
 # WanDB integration
-USE_WANDB = True
-PROJECT_NAME = "Test"
-ENTITY_NAME = "testReinforcedTanks"
+USE_WANDB = False
+PROJECT_NAME = "Project_name"
+ENTITY_NAME = "Entity_name"
 
 # Process Mode ["train", "render", "debug", "test", "choice"]
 PROCESS_MODE = "choice"
@@ -19,7 +19,7 @@ RENDER_TESTING = False
 N_INSTANCES = 1
 
 # Render training process this can only be true if N_INSTANCES == 1
-RENDER_TRAINING = False
+RENDER_TRAINING = True
 
 # Random start
 RANDOM_START = True

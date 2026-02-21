@@ -11,7 +11,7 @@ A reinforcement learning project that trains AI agents to play a tank combat gam
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Lingfeng555/ReinforcedTanks.git
+   git clone https://github.com/None3075/Reinforced_Tanks.git
    cd ReinforcedTanks
    ```
 
