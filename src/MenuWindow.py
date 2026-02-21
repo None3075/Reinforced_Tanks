@@ -223,8 +223,8 @@ class MenuWindow:
             result_counter = {"Red": 0, "Blue": 0, "Draw": 0}
 
             game.set_models(
-                red_model=self.trainer.load_model(red_model_path),
-                blue_model=self.trainer.load_model(blue_model_path)
+                red_model=self.trainer.load_model(red_model_path) if "custom" not in red_model_path else self.args["custom_agent_red"],
+                blue_model=self.trainer.load_model(blue_model_path) if "custom" not in blue_model_path else self.args["custom_agent_blue"]
             )
 
             for trial in tqdm(range(self.args["test_trials"]), desc=f"Testing {Path(red_model_path).stem} vs {Path(blue_model_path).stem}"):

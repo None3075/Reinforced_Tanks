@@ -1,6 +1,7 @@
 from reward import reward_function0
 from stable_baselines3.common.utils import FloatSchedule
 
+from CustomAgent import CustomAgent
 # WanDB integration
 USE_WANDB = False
 PROJECT_NAME = "Project_name"
@@ -11,9 +12,9 @@ PROCESS_MODE = "choice"
 
 # Test Mode Settings set Blue_Model to None to test agains all the models in enemy_models folder
 TRIALS = 5
-RED_MODEL = "models/model_1"
-BLUE_MODEL = None #"models/model_2"
-RENDER_TESTING = False
+RED_MODEL = "models/model_0"
+BLUE_MODEL = None #"models/model_0"
+RENDER_TESTING = True
 
 # Number of instances
 N_INSTANCES = 1
@@ -25,7 +26,7 @@ RENDER_TRAINING = True
 RANDOM_START = True
 
 # Enemy deterministic behavior (IMPORTANT: set this to True for testing)
-ENEMY_DETERMINISTIC = False
+ENEMY_DETERMINISTIC = True
 
 # Number of steps per epoch
 TIMESTEPS: int = 1e6
@@ -103,4 +104,6 @@ args = {
     "verbose": verbose,
     "seed": seed,
     "target_kl": target_kl,
+    "custom_agent_red": None, # load your custom agent here
+    "custom_agent_blue": None # load your custom agent here
 }

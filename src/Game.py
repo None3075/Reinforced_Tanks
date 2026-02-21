@@ -88,7 +88,7 @@ class Game:
         if update_flag:
             self.blue_player.set_batched_inputs(blue_action)
     
-    def set_models(self, red_model: PPO, blue_model: PPO) -> None:
+    def set_models(self, red_model, blue_model) -> None:
         self.red_player.set_model(red_model)
         self.blue_player.set_model(blue_model)
 
