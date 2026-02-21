@@ -72,8 +72,8 @@ class GameRenderer:
             self.window.fill(self.BLACK)
         
         # Draw terrain
-        if terrain_info:
-            self._draw_terrain(terrain_info)
+        # if terrain_info:
+        #     self._draw_terrain(terrain_info)
 
         # Parse observation
         parsed_obs = obs
